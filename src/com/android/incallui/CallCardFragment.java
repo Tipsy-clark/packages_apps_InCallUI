@@ -175,41 +175,6 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
      */
     private boolean mHasSecondaryCallInfo = false;
 
-<<<<<<< HEAD
-    private static PhoneUtil mPu;
-
-=======
-    private CallRecorder.RecordingProgressListener mRecordingProgressListener =
-            new CallRecorder.RecordingProgressListener() {
-        @Override
-        public void onStartRecording() {
-            mRecordingTimeLabel.setText(DateUtils.formatElapsedTime(0));
-            if (mRecordingTimeLabel.getVisibility() != View.VISIBLE) {
-                AnimUtils.fadeIn(mRecordingTimeLabel, AnimUtils.DEFAULT_DURATION);
-            }
-            if (mRecordingIcon.getVisibility() != View.VISIBLE) {
-                AnimUtils.fadeIn(mRecordingIcon, AnimUtils.DEFAULT_DURATION);
-            }
-        }
-
-        @Override
-        public void onStopRecording() {
-            AnimUtils.fadeOut(mRecordingTimeLabel, AnimUtils.DEFAULT_DURATION);
-            AnimUtils.fadeOut(mRecordingIcon, AnimUtils.DEFAULT_DURATION);
-        }
-
-        @Override
-        public void onRecordingTimeProgress(final long elapsedTimeMs) {
-            long elapsedSeconds = (elapsedTimeMs + 500) / 1000;
-            mRecordingTimeLabel.setText(DateUtils.formatElapsedTime(elapsedSeconds));
-
-            // make sure this is visible in case we re-loaded the UI for a call in progress
-            mRecordingTimeLabel.setVisibility(View.VISIBLE);
-            mRecordingIcon.setVisibility(View.VISIBLE);
-        }
-    };
->>>>>>> b774398... 更新suda源码
-
     private static PhoneUtil mPu;
 
     @Override

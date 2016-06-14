@@ -53,16 +53,9 @@ import com.google.common.collect.Sets;
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 
-<<<<<<< HEAD
-=======
 import com.sudamod.sdk.phonelocation.PhoneUtil;
 import android.suda.utils.SudaUtils;
 
-import java.lang.ref.WeakReference;
-import java.util.List;
->>>>>>> b774398... 更新suda源码
-import com.suda.cloud.phone.PhoneUtil;
-import android.suda.utils.SudaUtils;
 import java.util.HashMap;
 import java.util.Set;
 
