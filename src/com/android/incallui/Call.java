@@ -610,7 +610,7 @@ public class Call {
 
     /** Gets the time when call was first constructed */
     public long getCreateTimeMillis() {
-        return mTelecommCall.getDetails().getCreateTimeMillis();
+        return mTelecommCall.getDetails().getConnectTimeMillis();
     }
 
     public boolean isConferenceCall() {
